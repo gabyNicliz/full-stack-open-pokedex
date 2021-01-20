@@ -12,9 +12,11 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+        shell: bash
       - name: Now it is
         run: |
           date
+        shell: bash
       - name: Directory content
         run: |
           ls -l
