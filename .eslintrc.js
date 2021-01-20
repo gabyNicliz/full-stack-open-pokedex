@@ -46,5 +46,6 @@ module.exports = {
     ],
     "no-console": "error",
     "react/prop-types": 0,
+    "linebreak-style": ["error", "windows"]
   }
 }
