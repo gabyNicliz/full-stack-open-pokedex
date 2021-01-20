@@ -9,8 +9,10 @@ jobs:
   simple_deployment_pipeline:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Node setupt
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
       
@@ -28,4 +30,4 @@ jobs:
         with:
           command: npm run test:e2e
           start: npm run start-prod
-          wait-on: http://localhost:5000
+          wait-on: 'http://localhost:5000'
