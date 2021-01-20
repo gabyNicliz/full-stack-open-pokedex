@@ -13,11 +13,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      
       - name: npm install
         run: npm install
+
       - name: lint
         run: npm run lint
-      - run: npm run test
+      
+      - name: jest tests
+        run: npm run test
+
       - name: e2e tests
         uses: cypress-io/github-action@v2
         with:
