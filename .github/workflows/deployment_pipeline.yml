@@ -17,5 +17,5 @@ jobs:
         run: npm install
         shell: bash
       - name: lint
-        run: npm run eslint
+        run: npm run lint
         shell: bash
