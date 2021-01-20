@@ -17,4 +17,5 @@ jobs:
           date
       - name: Directory content
         run: |
-          ls
+          ls -l
+        working-directory: C:\Users\Ryzen\Desktop\full-stack-open-pokedex
